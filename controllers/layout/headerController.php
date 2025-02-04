@@ -1,6 +1,5 @@
 <?php 
 
-echo "<header>";
 
 include "./views/layout/header.php";
 
@@ -18,8 +17,3 @@ if (isset($_SESSION["user_id"])){
     include "./views/layout/headerVisitor.php";
 }
 
-echo "    
-        </ul>
-    </nav>
-</header>
-";

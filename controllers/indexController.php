@@ -13,7 +13,6 @@ $bdd = connexion();
 
 include './controllers/layout/headerController.php';
 echo "<main>";
-
 renderAccounts(bdd: $bdd);
 echo "</main>";
 include './controllers/layout/footerController.php';

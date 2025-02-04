@@ -8,10 +8,11 @@
     <link rel="shortcut icon" href="./assets/forklift.svg" type="image/x-icon">
 </head>
 <body>
-<h1><a href="/">Accueil</a></h1>
-<nav>
-    <ul>
-        <li>
-            <a href="/">Accueil</a>
-        </li>
+<header>
+    <h1><a href="/">Accueil</a></h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Accueil</a>
+            </li>
 
