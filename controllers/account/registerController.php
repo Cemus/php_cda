@@ -1,7 +1,7 @@
 <?php
 
 
-include './model/account.php';
+include './models/account.php';
 include './utils/connexion.php';
 include './env.php';
 include "./utils/utils.php";
@@ -56,6 +56,6 @@ function signUp(PDO $bdd):string{
     return '';
 }
 
-include "./controller/layout/headerController.php";
-include "./vue/account/signUpView.php";
-include "./controller/layout/footerController.php";
+include "./controllers/layout/headerController.php";
+include "./views/account/signUpView.php";
+include "./controllers/layout/footerController.php";

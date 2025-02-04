@@ -1,7 +1,7 @@
 <?php
 
-include 'model/category.php';
-include './model/account.php';
+include 'models/category.php';
+include './models/account.php';
 include './utils/connexion.php';
 include './env.php';
 include "./utils/utils.php";
@@ -25,9 +25,9 @@ $message = "";
    
 
 
-include './controller/layout/headerController.php';
+include './controllers/layout/headerController.php';
 echo "<main>";
-include 'vue/addCategory.php';
+include './views/addCategory.php';
 echo "</main>";
-include './controller/layout/footerController.php';
+include './controllers/layout/footerController.php';
 

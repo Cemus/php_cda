@@ -1,5 +1,5 @@
 <?php
-include "./model/account.php";
+include "./models/account.php";
 
 function displayAccounts(PDO $bdd){
     //Récupération de la liste des utilisateurs
@@ -17,7 +17,7 @@ function renderAccounts(PDO $bdd){
     $listUsers = displayAccounts($bdd);
     $userListExpanded = isset($_POST['expand']) && $_POST['expand'] === 'Voir';
 
-    include "./vue/accountList.php";
+    include "./views/accountList.php";
 }
 
 

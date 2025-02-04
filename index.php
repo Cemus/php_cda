@@ -17,16 +17,16 @@ switch ($path) {
 
     case '/disconnect':
     case '/disco':
-        include './controller/account/disconnectController.php';
+        include './controllers/account/disconnectController.php';
         break;
 
     case '/login':
-        include './controller/account/loginController.php';
+        include './controllers/account/loginController.php';
         break;
 
         
     case '/register':
-        include './controller/account/registerController.php';
+        include './controllers/account/registerController.php';
         break;
 
     case "/add-category":

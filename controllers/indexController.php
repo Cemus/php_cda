@@ -6,14 +6,14 @@ include './env.php';
 include './utils/connexion.php';
 include './utils/utils.php';
 
-include 'controller/accountController.php';
+include 'controllers/accountController.php';
 
 $bdd = connexion();
 
 
-include './controller/layout/headerController.php';
+include './controllers/layout/headerController.php';
 echo "<main>";
 
 renderAccounts(bdd: $bdd);
 echo "</main>";
-include './controller/layout/footerController.php';
+include './controllers/layout/footerController.php';

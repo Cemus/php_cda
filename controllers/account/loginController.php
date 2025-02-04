@@ -1,5 +1,5 @@
 <?php
-include './model/account.php';
+include './models/account.php';
 include './utils/connexion.php';
 include './env.php';
 include "./utils/utils.php";
@@ -50,6 +50,6 @@ function signIn(PDO $bdd):string{
         return "";
 }
 
-include "./controller/layout/headerController.php";
-include "./vue/account/signInView.php";
-include "./controller/layout/footerController.php";
+include "./controllers/layout/headerController.php";
+include "./views/account/signInView.php";
+include "./controllers/layout/footerController.php";

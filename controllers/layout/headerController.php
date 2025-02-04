@@ -2,7 +2,7 @@
 
 echo "<header>";
 
-include "./vue/layout/header.php";
+include "./views/layout/header.php";
 
 
 if(session_id() == '') {
@@ -13,9 +13,9 @@ if(session_id() == '') {
 
 if (isset($_SESSION["user_id"])){
     $myAccount = $_SESSION["user_firstname"];
-    include "./vue/layout/headerLogged.php";
+    include "./views/layout/headerLogged.php";
 }else{
-    include "./vue/layout/headerVisitor.php";
+    include "./views/layout/headerVisitor.php";
 }
 
 echo "    
