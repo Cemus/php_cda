@@ -1,8 +1,9 @@
 
 <li>
-    <a href="deco.php">Deconnexion</a>
+    <a href="/my-account">Compte <span>(<?=$myAccount?>)</span></a> 
 </li>
 
 <li>
-    <a href="myAccount.php">Mon compte</a> 
+    <a href="/disconnect">Deconnexion</a>
 </li>
+

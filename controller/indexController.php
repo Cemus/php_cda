@@ -11,7 +11,6 @@ include 'controller/accountController.php';
 
 $bdd = connexion();
 
-session_start();
 
 include './controller/headerController.php';
 echo "<main>";

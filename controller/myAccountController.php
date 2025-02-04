@@ -4,7 +4,7 @@ include './controller/headerController.php';
 
 
 if(!isset($_SESSION['user_id'])){
-    header(header:'location:index.php');
+    header(header:'location:/');
     exit;
 }
 

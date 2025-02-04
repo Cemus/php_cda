@@ -81,7 +81,7 @@ function signIn(PDO $bdd):string{
             $_SESSION['user_lastname'] = $account['lastname']; 
             $_SESSION['user_email'] = $account['email']; 
 
-            header(header:'location:myAccount.php');
+            header(header:'location:/my-account');
 
             return "Bienvenue, " . $account['firstname'] . " !";
         } else {

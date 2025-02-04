@@ -1,8 +1,8 @@
 
-<h1>Accueil</h1>
+<h1><a href="/">Accueil</a></h1>
 <nav>
     <ul>
         <li>
-            <a href="index.php">Accueil</a>
+            <a href="/">Accueil</a>
         </li>
 
