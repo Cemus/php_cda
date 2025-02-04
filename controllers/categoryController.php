@@ -22,12 +22,40 @@ $message = "";
             } 
         }
     }
+
+
+
+
+function displayCategories(PDO $bdd){
+    //Récupération de la liste des utilisateurs
+    $data = getAllCategory($bdd);
+
+    $listCategory = "";
+    foreach($data as $category){
+        $listCategory = $listCategory."<li><h2>".$category['name']."</h2></li>";
+    }
+    return $listCategory;
+}
+
+function renderCategories(PDO $bdd){
+
+    $listCategory = displayCategories($bdd);
+    $categoryListExpanded = isset($_POST['expandCategory']) && $_POST['expandCategory'] === 'Voir';
+
+    include "./views/categoryList.php";
+}
+
+
+function expandCategoryList(bool $visible):bool{
+        return !$visible;
+}
    
 
 
 include './controllers/layout/headerController.php';
 echo "<main>";
 include './views/addCategory.php';
+renderCategories($bdd);
 echo "</main>";
 include './controllers/layout/footerController.php';
 
