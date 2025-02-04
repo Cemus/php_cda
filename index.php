@@ -8,12 +8,11 @@ $path = isset($url['path']) ? $url['path'] : '/';
 switch ($path) {
     case '/':
     case '/accueil':
-        include './controller/indexController.php';
+        include './pages/indexPage.php';
         break;
     case '/my-account':
     case '/account':
-        include './pages/myAccount.php';
-        renderMyAccount();
+        include './pages/myAccountPage.php';
         break;
 
     case '/disconnect':
@@ -31,9 +30,9 @@ switch ($path) {
         break;
 
     case "/add-category":
-        include "./controller/categoryController.php";
-
+        include './pages/categoryPage.php';
+break;
     default:
         include './controller/errorController.php';
 }
-?>
+
