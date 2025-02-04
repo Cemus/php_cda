@@ -7,6 +7,11 @@ include './env.php';
 include "./utils/utils.php";
 include './vendor/autoload.php';
 
+if(!isset($_SESSION['user_id'])){
+    header(header:'location:/');
+    exit;
+}
+
 $bdd = connexion();
 $message = "";
 
