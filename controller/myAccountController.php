@@ -1,6 +1,6 @@
 <?php
 
-include './controller/headerController.php';
+include './controller/layout/headerController.php';
 
 
 if(!isset($_SESSION['user_id'])){
@@ -10,5 +10,5 @@ if(!isset($_SESSION['user_id'])){
 
 include './vue/viewMyAccount.php';
 
-include './vue/layout/footer.php';
+include './controller/layout/footerController.php';
 

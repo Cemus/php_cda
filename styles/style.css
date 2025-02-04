@@ -19,7 +19,7 @@ a:link {
 
 a:visited {
   text-decoration: none;
-  color: rgb(182, 182, 182);
+  color: rgb(206, 206, 206);
 }
 
 a:hover {
@@ -54,4 +54,8 @@ a > span {
 h1 > a:visited {
   text-decoration: none;
   color: white;
+}
+
+h1 > a {
+  user-select: none;
 }
